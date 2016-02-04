@@ -1,7 +1,7 @@
 {
-  "name": "portfolio-tl",
-  "version": "1.0.0",
-  "description": "",
+  "name": "portfolio",
+  "version": "2.0.0",
+  "description": "Portfolio site",
   "directories": {
     "doc": "doc"
   },
