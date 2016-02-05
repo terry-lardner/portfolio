@@ -48,12 +48,12 @@ gulp.task('js', () => {
 	.pipe(gulp.dest('dist/js/vendor'));
 });
 
+
 //FONTS task
 gulp.task('fonts', () => {
 	gulp.src('fonts/*.*')
 	.pipe(gulp.dest('dist/fonts'));
 });
-
 
 //IMAGES task
 gulp.task('images', () => {

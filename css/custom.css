@@ -457,6 +457,7 @@ CV section
   font-size: 19px;
 }
 
+
 .cv-skills-l,
 .cv-skills-r {
   display: inline-block;
@@ -464,12 +465,12 @@ CV section
 }
 
 .cv-skills-l {
-  text-align: left;
-  margin-right: 10px;
+  text-align: right;
+  margin-right: 20px;
 }
 .cv-skills-r {
-  text-align: right;
-  margin-left: 10px;
+  text-align: left;
+  margin-right: 54px;
 }
 /*
 ==================================
