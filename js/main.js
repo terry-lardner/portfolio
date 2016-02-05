@@ -7,6 +7,7 @@
 	const $projectsViewport = $('#projectsViewport');
 	const $cvViewport = $('#cvViewport');
 	const $contactViewPort = $('#contactViewPort');
+	const $headerMenu = $('#headerMenu');
 
 	//links
 	const $btnLogo = $('#btnLogo');
@@ -28,6 +29,8 @@
 	const headerHeight = $('#headerContainer').css('height').replace('px','');
 
 
+	$headerMenu.removeClass('hide');
+	
 	function scrollTo(e) {
 		$('html, body').stop().animate ({
 			scrollTop: e.offset().top - headerHeight
