@@ -1,91 +1,89 @@
 'use strict';
 (function() {
-	//cache DOM start
-	const $workViewport = $('#contentViewport').find('#workViewport');
+	//cache DOM 
+	//viewports
+	const $aboutViewport = $('#aboutViewport');
+	const $skillsViewport = $('#skillsViewport');
+	const $projectsViewport = $('#projectsViewport');
+	const $cvViewport = $('#cvViewport');
+	const $contactViewPort = $('#contactViewPort');
 
-	const $viewportWeb = $workViewport.find('#viewportWeb');
-	const $viewportCodepen = $workViewport.find('#viewportCodepen');
-	const $viewportOther = $workViewport.find('#viewportOther');
+	//links
+	const $btnLogo = $('#btnLogo');
+	const $btnAbout = $('#btnAbout');
+	const $btnSkills = $('#btnSkills');
+	const $btnProjects = $('#btnProjects');
+	const $btnCV = $('#btnCV');
+	const $btnContact = $('#btnContact');
+	const $btnCVLinkToSkills = $('#btnCVLinkToSkills');
 
-	const $objViewportWeb = {
-		div: $viewportWeb,
-		link: $viewportWeb.find('#previewWeb'),
-		img: $viewportWeb.find('img'),
-		mouseOverBg: $viewportWeb.find('.mouseOverBg'),
-		mouseOverTxt: $viewportWeb.find('.mouseOverTxt'),
-		noHoverBg: $viewportWeb.find('.noHoverBg')
+	//links - menu
+	const $btnMenuAbout = $('#btnMenuAbout');
+	const $btnMenuSkills = $('#btnMenuSkills');
+	const $btnMenuProjects = $('#btnMenuProjects');
+	const $btnMenuCV = $('#btnMenuCV');
+	const $btnMenuContact = $('#btnMenuContact');
+
+	//Get header height for offset
+	const headerHeight = $('#headerContainer').css('height').replace('px','');
+
+
+	function scrollTo(e) {
+		$('html, body').stop().animate ({
+			scrollTop: e.offset().top - headerHeight
+		}, 1000);
 	};
 
-	const $objViewportCodePen = {
-		div: $viewportCodepen,
-		link: $viewportCodepen.find('#previewCodepen'),
-		img: $viewportCodepen.find('img'),
-		mouseOverBg: $viewportCodepen.find('.mouseOverBg'),
-		mouseOverTxt: $viewportCodepen.find('.mouseOverTxt'),
-		noHoverBg: $viewportCodepen.find('.noHoverBg')
-	};
-
-	const $objViewportOther = {
-		div: $viewportOther,
-		link: $viewportOther.find('#previewOther'),
-		img: $viewportOther.find('img'),
-		mouseOverBg: $viewportOther.find('.mouseOverBg'),
-		mouseOverTxt: $viewportOther.find('.mouseOverTxt'),
-		noHoverBg: $viewportOther.find('.noHoverBg')
-	};
-	//cacheDOM end
-
-	let animIntervalImg = 200;
-	let animIntervalmouseOverBg = 300;
-	let animIntervalmouseOverTxt = 300;
-	let animIntervalNoHover = 50;
-	let animIntervalAlt = 450;
-	let targetOpacity = 0.1;
-
-	function showAnim(obj) {
-		obj.noHoverBg.stop().animate({'opacity':0}, animIntervalNoHover);
-		obj.img.stop().animate({opacity: targetOpacity}, animIntervalImg, () => {
-			obj.mouseOverBg.stop().animate({opacity:1}, { duration: animIntervalmouseOverBg });
-			obj.mouseOverTxt.stop().animate({'margin-left':'0'}, animIntervalmouseOverTxt);
-		});		
-	}
-
-	function hideAnim(obj) {
-		obj.img.stop().animate({opacity:1}, animIntervalImg, () => {
-			obj.mouseOverBg.stop().animate({opacity:0}, { duration: animIntervalmouseOverBg });
-			obj.mouseOverTxt.stop().animate({'margin-left':'-150'}, animIntervalmouseOverTxt);
-			obj.noHoverBg.stop().animate({opacity:1}, animIntervalAlt);
-		});	
-
-	}
-
-	//animate #My work
-	$objViewportWeb.link.on('mouseover', () => {
-		showAnim($objViewportWeb);
+	//Event listeners
+	//Header links
+	$btnLogo.on('click', () => {
+		scrollTo($aboutViewport);
 	});
 
-	$objViewportWeb.link.on('mouseleave', () => {
-		hideAnim($objViewportWeb);
+	$btnAbout.on('click', () => {
+		scrollTo($aboutViewport);
 	});
 
-	//animate #Codepen.io
-	$objViewportCodePen.link.on('mouseover', () => {
-		showAnim($objViewportCodePen);
-
+	$btnSkills.on('click', () => {
+		scrollTo($skillsViewport);
 	});
 
-	$objViewportCodePen.link.on('mouseleave', () => {		
-		hideAnim($objViewportCodePen);
-
+	$btnProjects.on('click', () => {
+		scrollTo($projectsViewport);
 	});
 
-	//animate #Other
-	$objViewportOther.link.on('mouseover', () => {
-		showAnim($objViewportOther);
+	$btnCV.on('click', () => {
+		scrollTo($cvViewport);
 	});
 
-	$objViewportOther.link.on('mouseleave', ()=> {	
-		hideAnim($objViewportOther);
+	$btnContact.on('click', () => {
+		scrollTo($contactViewPort);
+	});
+
+	//Header menu links
+	$btnMenuAbout.on('click', () => {
+		scrollTo($aboutViewport);
+	});
+
+	$btnMenuSkills.on('click', () => {
+		scrollTo($skillsViewport);
+	});
+
+	$btnMenuProjects.on('click', () => {
+		scrollTo($projectsViewport);
+	});
+
+	$btnMenuCV.on('click', () => {
+		scrollTo($cvViewport);
+	});
+
+	$btnMenuContact.on('click', () => {
+		scrollTo($contactViewPort);
+	});
+
+	//Core skills link in cv
+	$btnCVLinkToSkills.on('click', () => {
+		scrollTo($skillsViewport);
 	});
 
 }());

@@ -25,77 +25,73 @@
 	<!--[if lt IE 8]>
 	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
-	<header id="header" class="container-header">
-		<a class="btn-logo-v2 logo-pos" href="index.html">tl</a>
-		<div class="social-menu-pos">
-			<div class="social-menu">
+	<header id="headerContainer" class="container-header">
+		<a id="btnLogo" class="btn-logo-v2 logo-pos">tl</a>
+		<div class="header-links">
+			<a id="btnAbout">Home</a><!--
+			--><a id="btnSkills">Core Skills</a><!--
+			--><a id="btnProjects">Projects</a><!--
+			--><a id="btnCV">CV</a><!--
+			--><a id="btnContact">Contact</a>
+		</div>
+		<div class="header-links-menu header-links-menu-pos">
 				<ul class="vertical menu" data-accordion-menu>
 					<li>
-						<a href="#"><i class="fa fa-bars"></i></a>
+						<a class="menu-bars"><i class="fa fa-bars"></i></a>
 						<ul class="menu vertical nested">
-							<li><a href="https://github.com/terry-lardner/" target="_blank"><img src="img/1454565810_github-square-gloss-social-media.svg" alt="github"></a></li>
-							<li><a href="https://www.linkedin.com/in/terence-lardner-24264992" target="_blank"><img src="img/1454565742_linkedin-square-gloss-social-media.svg" alt="linkedin"></a></li>
-							<li><a href="https://twitter.com/tlard88" target="_blank"><img src="img/1454565732_twitter-square-gloss-social-media.svg" alt="twitter"></a></li>
-							<li><a><img src="img/1454565775_skype-square-gloss-social-media.svg" alt="skype"></a></li>
-							<li><a><img src="img/1454565757_mail-square-gloss-social-media.svg" alt="gmail"></a></li>
+							<li><a class="menu-item" id="btnMenuAbout">Home</a></li>
+							<li><a class="menu-item" id="btnMenuSkills">Core Skills</a></li>
+							<li><a class="menu-item" id="btnMenuProjects">Projects</a></li>
+							<li><a class="menu-item" id="btnMenuCV">CV</a></li>
+							<li><a class="menu-item" id="btnMenuContact">Contact</a></li>
 						</ul>	
 					</li>			
 				</ul>				
-			</div>
-		</div>		
-		<div class="social">
-			<a class="social-logo" href="https://github.com/terry-lardner/" target="_blank"><img src="img/1454565810_github-square-gloss-social-media.svg" alt="github"></a><!--
-			--><a class="social-logo" href="https://www.linkedin.com/in/terence-lardner-24264992" target="_blank"><img src="img/1454565742_linkedin-square-gloss-social-media.svg" alt="linkedin"></a><!--
-			--><a class="social-logo" href="https://twitter.com/tlard88" target="_blank"><img src="img/1454565732_twitter-square-gloss-social-media.svg" alt="twitter"></a><!--
-			--><a class="social-logo"><img src="img/1454565775_skype-square-gloss-social-media.svg" alt="skype"></a><!--
-			--><a class="social-logo"><img src="img/1454565757_mail-square-gloss-social-media.svg" alt="gmail"></a>
 		</div>					
 	</header><!-- /header -->
-	<section id="aboutViewport" class="section-about">
+	<section id="aboutViewport" class="section-main section-about">
 		<div class="lead">A small <span class="lead-alt-text">piece</span> of TRUTH.</div>
-		<div>
 			<i class="fa fa-user fa-3x"></i>				
-			<p class="intro">
+			<p class="abIntro">
 					"I do not carry a sickle or scythe.<br>
 					I only wear a hooded black robe when it's cold.<br>
 					And I don't have those skull-like facial features you seem to enjoy pinning on me from a distance.<br> 
 					You want to know what I truly look like? I'll help you out.<br>
-					Find yourself a mirror while I continue."<br>
+					Find yourself a mirror, while I continue."<br>
 			</p>
-			<p class="aboutme">
+			<p class="abSummary">
 					In September 2015, I began the daunting task of teaching myself the trade of modern Front-end Web development.<br><i class="fa fa-circle"></i><br>
 					This ranged from re-learning the basics of html and css to diving into vanilla javascript, exploring MV* frameworks and server-side JS. I also exposed myself to various tools to aid in rapid development/prototyping.<br><i class="fa fa-circle"></i><br>					
-					So, this site will serve as a place where I can collate ideas, demos, prototypes, main projects, side projects and never-to-be-finised projects into one tidy little graveyard-esque location.
+					This site will serve as a place where I can collate ideas, demos, prototypes, main projects, side projects and never-to-be-finised projects into one tidy little graveyard.
 			</p>					
-		</div>
 	</section>
-	<section id="skillsViewport" class="section-skills">
+	<section id="skillsViewport" class="section-main section-skills">
 		<p class="section-title">
-			Skills
+			Core Skills
 		</p>
 		<i class="fa fa-cubes fa-3x"></i>
-		<ul class="skills">
+		<ul class="section-list skills">
 			<li class="title">Client-side</li>
 			<li>HTML5<i class="fa fa-circle"></i>CSS3<i class="fa fa-circle"></i>Javascript/ES6<i class="fa fa-circle"></i>jQuery/AJAX</li>
 			<li class="title">Server-side</li>
 			<li>MongoDB<i class="fa fa-circle"></i>Expressjs/MongooseORM<i class="fa fa-circle"></i>Nodejs</li>
-			<li class="title">Dev-Tools</li>
-			<li>Github<i class="fa fa-circle"></i>npm/Bower<i class="fa fa-circle"></i>Gulp<i class="fa fa-circle"></i>Yeoman</li>
+			<li class="title">Other</li>
+			<li>Github<i class="fa fa-circle"></i>Redmine<i class="fa fa-circle"></i>npm/Bower<i class="fa fa-circle"></i>Gulp<i class="fa fa-circle"></i>Yeoman</li>
 		</ul>
-		<p class="info">
+		<p class="skills-info">
 		Working knowledge of <span class="highlight">HTML5</span> / <span class="highlight">CSS3</span> / front-side <span class="highlight">Javascript</span> (<span class="highlight">jQuery</span>).<br>
-		Experience with AJAX and server-side Javascript (<span class="highlight">Expressjs</span> / <span class="highlight">Nodejs</span>).<br>
+		Experience with and basic knowledge of AJAX and server-side Javascript (<span class="highlight">Expressjs</span> / <span class="highlight">Nodejs</span>).<br>
 		Working knowledge of package management tools (<span class="highlight">npm</span> / <span class="highlight">bower</span>) and build systems (<span class="highlight">gulp</span>).<br>
 		<span class="highlight">Responsive Web Design</span> and familiarity with popular css frameworks (<span class="highlight">Foundation</span> and <span class="highlight">Bootstrap</span>).<br>
 		Working knowledge of version control and issue tracking tools (<span class="highlight">Github</span> / <span class="highlight">TortoiseCVS</span> / <span class="highlight">Redmine</span>).
 		</p>
 	</section>
-	<section id="projectsViewport" class="section-projects">
+	<section id="projectsViewport" class="section-main section-projects">
 		<p class="section-title">
 			Projects / Demos
 		</p>
 		<i class="fa fa-suitcase fa-3x"></i>
-		<ul class="section-list">
+		<ul class="section-list projects">
 			<li id="project1" class="project">
 				<div class="project-title">
 					Portfolio v1.0
@@ -121,16 +117,52 @@
 				<a data-open="modal-project4"><img src="img/project_directory.jpg"></a>
 			</li>								
 		</ul>
+		<div class="github-logo">
+			<a href="https://github.com/terry-lardner/" target="_blank"><img src="img/1454565810_github-square-gloss-social-media.svg" alt="github"></a>
+		</div>
+		<div class="github-display">
+			https://github.com/terry-lardner/	
+		</div>
+		
+		
 	</section>
-	<section id="cvViewport" class="section-cv">
+	<section id="cvViewport" class="section-main section-cv">
 		<p class="section-title">
 			CV / Timeline
 		</p>
 		<i class="fa fa-university fa-3x"></i>
+		<div>
+			<ul class="section-list">
+				<li class="title">Skills + Tools</li>
+			</ul>
+			<ul class="section-list cv-skills-l">
+				<li>Responsive Web Design</li>
+				<li>HTML5</li>
+				<li>CSS3</li>
+				<li>Javascript</li>
+				<li>jQuery / AJAX</li>
+				<li>Foundation</li>
+				<li>Bootstrap</li>
+				<li>GitHub</li>
+			</ul>
+			<ul class="section-list cv-skills-r">			
+				<li>Yeoman</li>
+				<li>MongoDB</li>
+				<li>Expressjs</li>
+				<li>MongooseORM</li>
+				<li>Nodejs</li>
+				<li>npm / bower</li>
+				<li>Gulp</li>
+				<li>Redmine</li>
+			</ul>
+			<ul class="section-list">
+				<li class="linkToCoreSkills">See description in <a id="btnCVLinkToSkills" class="btnCVLinkToSkills" >Core Skills</a> for more detail.</li>
+			</ul>
+		</div>		
 		<ul class="section-list workexp">
 			<li class="title">Work Experience</li>
 			<li class="subtitle">2008 - 2015 Mcentricksd S.A. - QA Analyst / Developer</li>
-			<li>Responsible for the design &amp; implementation of targeted, logic-driven, promotional Campaigns of varying complexity and target volume. Target volume ranged from a few hundred to a tens of millions of users, depending on the requirements of the campaign.</li>
+			<li class="first">Responsible for the design &amp; implementation of targeted, logic-driven, promotional Campaigns of varying complexity and target volume. Target volume ranged from a few hundred to a tens of millions of users, depending on the requirements of the campaign.</li>
 			<li>Requirements gathering.</li>
 			<li>Functional / Regression / Integration testing.</li>
 			<li>Scheduling, documentation and execution of User Acceptance Tests, conducted directly with clients.</li>
@@ -144,15 +176,48 @@
 			<li>MSc. in Information Technology for E-Commerce.</li>
 			<li class="subtitle">2002 - 2006 University of Bradford</li>
 			<li>BSc. (Hons) Computing and Information Systems</li>
-			<li class="subtitle">2000 - 2002 Shaftsbury School, Dorset</li>
-			<li>A-Levels: Information and Communication Technology, Maths and Physics.</li>
+			<!-- <li class="subtitle">2000 - 2002 Shaftsbury School, Dorset</li>
+			<li>A-Levels: Information and Communication Technology, Maths and Physics.</li> -->
 		</ul>
 	</section>
-	<!--
-	<footer id="footer" class="container-footer">
-		<p class="breadcrumbs"><a href="index.html">Home</a> | <a href="projects.html">Projects</a> | <a href="resume.html">CV</a> | <a href="contact.html">Contact</a></p>
+	<section id="contactViewPort" class="section-main section-contact">
+		<p class="section-title">
+			Contact
+		</p>
+		<i class="fa fa-users fa-3x"></i>
+		<div class="social">
+				<a class="social-logo" href="https://github.com/terry-lardner/" target="_blank"><img src="img/1454565810_github-square-gloss-social-media.svg" alt="github"></a>
+				<a class="social-logo" href="https://www.linkedin.com/in/terence-lardner-24264992" target="_blank"><img src="img/1454565742_linkedin-square-gloss-social-media.svg" alt="linkedin"></a>
+				<a class="social-logo" href="https://twitter.com/tlard88" target="_blank"><img src="img/1454565732_twitter-square-gloss-social-media.svg" alt="twitter"></a>
+				<a class="social-logo"><img src="img/1454565775_skype-square-gloss-social-media.svg" alt="skype"></a>
+				<a class="social-logo"><img src="img/1454565757_mail-square-gloss-social-media.svg" alt="gmail"></a>
+			<ul class="contactDetails">
+				<li>skype: terry_lardner</li>
+				<li>email: terry-lardner@gmail.com</li>
+				<li>tel: (+44)7938254685</li>
+			</ul>
+		</div>
+	</section>	
+	<footer class="hide container-footer">
+		<div class="hide social-menu-pos">
+			<div class="social-menu">
+				<ul class="vertical menu" data-accordion-menu>
+					<li>
+						<a href="#"><i class="fa fa-bars"></i></a>
+						<ul class="menu vertical nested">
+							<li><a href="https://github.com/terry-lardner/" target="_blank"><img src="img/1454565810_github-square-gloss-social-media.svg" alt="github"></a></li>
+							<li><a href="https://www.linkedin.com/in/terence-lardner-24264992" target="_blank"><img src="img/1454565742_linkedin-square-gloss-social-media.svg" alt="linkedin"></a></li>
+							<li><a href="https://twitter.com/tlard88" target="_blank"><img src="img/1454565732_twitter-square-gloss-social-media.svg" alt="twitter"></a></li>
+							<li><a><img src="img/1454565775_skype-square-gloss-social-media.svg" alt="skype"></a></li>
+							<li><a href="mailto:terry.lardner@gmail.com" "email me"><img src="img/1454565757_mail-square-gloss-social-media.svg" alt="gmail"></a></li>
+						</ul>	
+					</li>			
+				</ul>				
+			</div>
+		</div>		
+		
 	</footer>
-	-->
+	
 	<div class="reveal" id="modal-project3" data-reveal>
 		<img src="img/project_ic_full.jpg">
 		<p class="modal-description">Short description of project #icecream.</p>
