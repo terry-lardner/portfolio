@@ -2,28 +2,28 @@
 (function() {
 	//cache DOM 
 	//viewports
-	const $aboutViewport = $('#aboutViewport');
-	const $skillsViewport = $('#skillsViewport');
-	const $projectsViewport = $('#projectsViewport');
-	const $cvViewport = $('#cvViewport');
-	const $contactViewPort = $('#contactViewPort');
-	const $headerMenu = $('#headerMenu');
+	const $aboutViewport = $('#aboutViewport'),
+	$skillsViewport = $('#skillsViewport'),
+	$projectsViewport = $('#projectsViewport'),
+	$cvViewport = $('#cvViewport'),
+	$contactViewPort = $('#contactViewPort'),
+	$headerMenu = $('#headerMenu');
 
 	//links
-	const $btnLogo = $('#btnLogo');
-	const $btnAbout = $('#btnAbout');
-	const $btnSkills = $('#btnSkills');
-	const $btnProjects = $('#btnProjects');
-	const $btnCV = $('#btnCV');
-	const $btnContact = $('#btnContact');
-	const $btnCVLinkToSkills = $('#btnCVLinkToSkills');
+	const $btnLogo = $('#btnLogo'),
+	$btnAbout = $('#btnAbout'),
+	$btnSkills = $('#btnSkills'),
+	$btnProjects = $('#btnProjects'),
+	$btnCV = $('#btnCV'),
+	$btnContact = $('#btnContact'),
+	$btnCVLinkToSkills = $('#btnCVLinkToSkills');
 
 	//links - menu
-	const $btnMenuAbout = $('#btnMenuAbout');
-	const $btnMenuSkills = $('#btnMenuSkills');
-	const $btnMenuProjects = $('#btnMenuProjects');
-	const $btnMenuCV = $('#btnMenuCV');
-	const $btnMenuContact = $('#btnMenuContact');
+	const $btnMenuAbout = $('#btnMenuAbout'),
+	$btnMenuSkills = $('#btnMenuSkills'),
+	$btnMenuProjects = $('#btnMenuProjects'),
+	$btnMenuCV = $('#btnMenuCV'),
+	$btnMenuContact = $('#btnMenuContact');
 
 	//Get header height for offset
 	const headerHeight = $('#headerContainer').css('height').replace('px','');
