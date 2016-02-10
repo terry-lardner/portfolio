@@ -226,7 +226,7 @@ Viewport height for different screen sizes
   }
 
   .section-projects {
-    min-height: 1350px;
+    min-height: 1500px;
   }
 
   .section-cv {
@@ -245,7 +245,7 @@ Viewport height for different screen sizes
   }
 
   .section-projects {
-    min-height: 1300px;
+    min-height: 1400px;
   }
 
   .section-cv {
@@ -382,6 +382,7 @@ Projects section
   background-color: #000;
   border: 1px solid #fff;
   outline: 0;
+  width: 60%;
 }
 
 .modal-description {

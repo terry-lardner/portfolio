@@ -92,30 +92,36 @@
 		</p>
 		<i class="fa fa-suitcase fa-3x"></i>
 		<ul class="section-list projects">
-			<li id="project1" class="project">
+			<li id="proj-codepen" class="project">
 				<div class="project-title">
 					#CodePens
 				</div>
 				<a href="http://codepen.io/terry-lardner/pens/public/" target ="_blank"><img src="img/codepen_500_300.jpg"></a>
 			</li><!--
-			--><li id="project2" class="project">
+			--><li id="proj-portfolioV1" class="project">
 				<div class="project-title">
 					Portfolio v1.0
 				</div>
 				<a href="https://rawgit.com/terry-lardner/portfolio/1.0.0/index.html" target="_blank"><img src="img/project_portfolio.jpg"></a>
+			</li><!--
+			--><li id="proj-wiki" class="project">
+				<div class="project-title">
+					#Wikipedia
+				</div>
+				<a data-open="modal-projectWiki"><img src="img/project_wiki.jpg"></a>
 			</li><!--				
-			--><li id="project3" class="project">
+			--><li id="proj-ic" class="project">
 				<div class="project-title">
 					#Ice Cream
 				</div>
-				<a data-open="modal-project3"><img src="img/project_ic.jpg"></a>				
+				<a data-open="modal-projectIC"><img src="img/project_ic.jpg"></a>				
 			</li><!--
-			--><li id="project4" class="project">
+			--><li id="proj-directory" class="project">
 				<div class="project-title">
 					#Directory
 				</div>
-				<a data-open="modal-project4"><img src="img/project_directory.jpg"></a>
-			</li>								
+				<a data-open="modal-projectDirectory"><img src="img/project_directory.jpg"></a>
+			</li>							
 		</ul>
 		<div class="github-logo">
 			<a href="https://github.com/terry-lardner/" target="_blank"><img src="img/1454565810_github-square-gloss-social-media.svg" alt="github"></a>
@@ -217,15 +223,23 @@
 		</div>		
 		
 	</footer>
-	
-	<div class="reveal" id="modal-project3" data-reveal>
+
+
+	<div class="reveal" id="modal-projectWiki" data-reveal>
+		<img src="img/project_wiki_full.jpg">
+		<p class="modal-description">Short description of project #Wikipedia.</p>
+		<button class="close-button" data-close aria-label="Close reveal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+	<div class="reveal" id="modal-projectIC" data-reveal>
 		<img src="img/project_ic_full.jpg">
 		<p class="modal-description">Short description of project #icecream.</p>
 		<button class="close-button" data-close aria-label="Close reveal" type="button">
           <span aria-hidden="true">&times;</span>
         </button>
     </div>
-	<div class="reveal" id="modal-project4" data-reveal>
+	<div class="reveal" id="modal-projectDirectory" data-reveal>
 		<img src="img/project_directory_full.jpg">
 		<p class="modal-description">A "simple" contacts directory app delving into RESTful apis. Uses jQuery AJAX calls to an api served by an expressjs server / mongoDB database.</p>
 		<button class="close-button" data-close aria-label="Close reveal" type="button">
