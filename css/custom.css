@@ -57,26 +57,7 @@ ul, li {
   display: none;
 }
 
-
 /* foundation overrides end*/
-
-@media screen and (min-width: 40em) {
-  .header-links {
-    display:block;
-  }
-  .header-links-menu {
-    display: none;
-  }
-}
-
-@media screen and (max-width:64em) {
-  .header-links {
-    display:none;
-  }
-  .header-links-menu {
-    display: block;
-  }
-}
 
 .header-links {
   font-size: 18px;
@@ -210,55 +191,6 @@ Logo
 
 
 /*
-foundation override end
-*/
-/*  min-height: 850px;
-
-==================================
-Viewport height for different screen sizes
-==================================
-*/
-
-@media screen and (max-width:29.9999em) {
-  .section-about,
-  .section-skills  {
-    min-height: 1000px;
-  }
-
-  .section-projects {
-    min-height: 1500px;
-  }
-
-  .section-cv {
-    min-height: 1550px; 
-  }
-
-  .section-contact {
-      min-height: 200px;
-  }
-}
-
-@media screen and (min-width:30em) {
-  .section-about,
-  .section-skills {
-    min-height: 900px;
-  }
-
-  .section-projects {
-    min-height: 1400px;
-  }
-
-  .section-cv {
-    min-height: 1400px; 
-  }
-
-  .section-contact {
-      min-height: 200px;
-  }
-}
-
-
-/*
 ==================================
 About section
 ==================================
@@ -367,22 +299,11 @@ Projects section
   margin-top: 15px;
 }
 
-@media screen and (min-width: 40em) {
-  
-}
-
-@media screen and (max-width: 64em) {
-  .project {
-    margin-top: 20px;
-    width: 300px;
-  }
-}
-
 .reveal {
   background-color: #000;
   border: 1px solid #fff;
   outline: 0;
-  width: 60%;
+  overflow: hidden;
 }
 
 .modal-description {
@@ -394,14 +315,15 @@ Projects section
   background-color: #000;
   line-height: 0;
   color: #fff;
-  padding: 25px 25px 25px 8px;
-  margin: -16px 0 0 0;
-  right: 0;
-  top: 0;
-  outline: 0;
+  /*padding: 25px 25px 25px 8px;*/
+  /*margin: -16px 0 0 0;*/
+  /*right: 0;*/
+  /*top: 0;*/
+  /*outline: 0;*/
   font-size: 60px;
-  width: 30px;
-  height: 30px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
 }
 
 .close-button:hover {
@@ -493,21 +415,123 @@ Contact section
   padding-top: 20px;
 }
 
-@media screen and (min-width: 40em) {
+.social-logo:first-child img {
+  margin-left: 0;
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width:29.9999em) {
+  /* Header menu */
+   .header-links {
+    display:none;
+  }
+  .header-links-menu {
+    display: block;
+  }
+
+  /* Section viewports */
+  .section-about,
+  .section-skills  {
+    min-height: 1000px;
+  }
+
+  .section-projects {
+    min-height: 1550px;
+  }
+
+  .section-cv {
+    min-height: 1550px; 
+  }
+
+  .section-contact {
+      min-height: 200px;
+  }
+  /* Social logos*/
+  .social-logo img {
+    width: 50px;
+    margin-left: 10px;
+  }
+  /* Project previews */
+  .project {
+    margin-top: 20px;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width:30em) and (max-width:59.9999em) {
+  /* Header menu */
+  .header-links {
+    display:none;
+  }
+  .header-links-menu {
+    display: block;
+  }
+  /* Section viewports */
+  .section-about,
+  .section-skills  {
+    min-height: 1000px;
+  }
+
+  .section-projects {
+    min-height: 1200px;
+  }
+
+  .section-cv {
+    min-height: 1350px; 
+  }
+
+  .section-contact {
+      min-height: 200px;
+  }
+  /* Social logos*/
+  .social-logo img {
+    width: 60px;
+    margin-left: 20px;
+  }
+
+  /* Project previews */
+  .project {
+    margin-top: 12px;
+    width: 280px;
+  } 
+}
+
+/* other */
+@media screen and (min-width: 60em) {
+  /* Header menu */
+  .header-links {
+    display:block;
+  }
+  .header-links-menu {
+    display: none;
+  }
+  /* Section viewports */
+  .section-about,
+  .section-skills  {
+    min-height: 1000px;
+  }
+
+  .section-projects {
+    min-height: 1400px;
+  }
+
+  .section-cv {
+    min-height: 1300px; 
+  }
+
+  .section-contact {
+      min-height: 1000px;
+  }
+  /* Social logos*/
   .social-logo img {
     width: 80px;
     margin-left: 20px;
   }
-}
-
-@media screen and (max-width: 64em) {
-  .social-logo img {
-    width: 60px;
-    margin-left: 5px;
-    margin-top: 5px;
-  }
-}
-
-.social-logo:first-child img {
-  margin-left: 0;
+  /* Project previews */
+  .project {
+    margin-top: 12px;
+    width: 450px;
+  } 
 }
