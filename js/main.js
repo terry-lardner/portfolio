@@ -2,7 +2,7 @@
 (function() {
 	//cache DOM 
 	//viewports
-	const $aboutViewport = $('#aboutViewport'),
+	var $aboutViewport = $('#aboutViewport'),
 	$skillsViewport = $('#skillsViewport'),
 	$projectsViewport = $('#projectsViewport'),
 	$cvViewport = $('#cvViewport'),
@@ -10,7 +10,7 @@
 	$headerMenu = $('#headerMenu');
 
 	//links
-	const $btnLogo = $('#btnLogo'),
+	var $btnLogo = $('#btnLogo'),
 	$btnAbout = $('#btnAbout'),
 	$btnSkills = $('#btnSkills'),
 	$btnProjects = $('#btnProjects'),
@@ -19,74 +19,43 @@
 	$btnCVLinkToSkills = $('#btnCVLinkToSkills');
 
 	//links - menu
-	const $btnMenuAbout = $('#btnMenuAbout'),
+	var $btnMenuAbout = $('#btnMenuAbout'),
 	$btnMenuSkills = $('#btnMenuSkills'),
 	$btnMenuProjects = $('#btnMenuProjects'),
 	$btnMenuCV = $('#btnMenuCV'),
 	$btnMenuContact = $('#btnMenuContact');
 
 	//Get header height for offset
-	const headerHeight = $('#headerContainer').css('height').replace('px','');
+	var headerHeight = $('#headerContainer').css('height').replace('px','');
 
 
 	$headerMenu.removeClass('hide');
 	
 	function scrollTo(e) {
+		var element = e.data.el;
 		$('html, body').stop().animate ({
-			scrollTop: e.offset().top - headerHeight
+			scrollTop: element.offset().top - headerHeight
 		}, 1000);
 	};
 
 	//Event listeners
 	//Header links
-	$btnLogo.on('click', () => {
-		scrollTo($aboutViewport);
-	});
-
-	$btnAbout.on('click', () => {
-		scrollTo($aboutViewport);
-	});
-
-	$btnSkills.on('click', () => {
-		scrollTo($skillsViewport);
-	});
-
-	$btnProjects.on('click', () => {
-		scrollTo($projectsViewport);
-	});
-
-	$btnCV.on('click', () => {
-		scrollTo($cvViewport);
-	});
-
-	$btnContact.on('click', () => {
-		scrollTo($contactViewPort);
-	});
+	$btnLogo.on('click', {el:$aboutViewport}, scrollTo);
+	$btnAbout.on('click', {el:$aboutViewport}, scrollTo);
+	$btnSkills.on('click', {el:$skillsViewport}, scrollTo);
+	$btnProjects.on('click', {el:$projectsViewport}, scrollTo);
+	$btnCV.on('click', {el:$cvViewport}, scrollTo);
+	$btnContact.on('click', {el:$contactViewPort}, scrollTo);
 
 	//Header menu links
-	$btnMenuAbout.on('click', () => {
-		scrollTo($aboutViewport);
-	});
+	$btnMenuAbout.on('click', {el:$aboutViewport}, scrollTo);
+	$btnMenuSkills.on('click', {el:$skillsViewport}, scrollTo);
+	$btnMenuProjects.on('click', {el:$projectsViewport}, scrollTo);
+	$btnMenuCV.on('click', {el:$cvViewport}, scrollTo);
+	$btnMenuContact.on('click', {el:$contactViewPort}, scrollTo);
 
-	$btnMenuSkills.on('click', () => {
-		scrollTo($skillsViewport);
-	});
-
-	$btnMenuProjects.on('click', () => {
-		scrollTo($projectsViewport);
-	});
-
-	$btnMenuCV.on('click', () => {
-		scrollTo($cvViewport);
-	});
-
-	$btnMenuContact.on('click', () => {
-		scrollTo($contactViewPort);
-	});
 
 	//Core skills link in cv
-	$btnCVLinkToSkills.on('click', () => {
-		scrollTo($skillsViewport);
-	});
+	$btnCVLinkToSkills.on('click', {el:$skillsViewport}, scrollTo);
 
 }());
