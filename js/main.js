@@ -7,28 +7,30 @@
 	$projectsViewport = $('#projectsViewport'),
 	$cvViewport = $('#cvViewport'),
 	$contactViewPort = $('#contactViewPort'),
+	$headerContainer = $('#headerContainer'),
 	$headerMenu = $('#headerMenu');
 
 	//links
-	var $btnLogo = $('#btnLogo'),
-	$btnAbout = $('#btnAbout'),
-	$btnSkills = $('#btnSkills'),
-	$btnProjects = $('#btnProjects'),
-	$btnCV = $('#btnCV'),
-	$btnContact = $('#btnContact'),
-	$btnCVLinkToSkills = $('#btnCVLinkToSkills');
+	var $btnLogo = $('#headerContainer').find('#btnLogo'),
+	$btnAbout = $('#headerContainer').find('#btnAbout'),
+	$btnSkills = $('#headerContainer').find('#btnSkills'),
+	$btnProjects = $('#headerContainer').find('#btnProjects'),
+	$btnCV = $('#headerContainer').find('#btnCV'),
+	$btnContact = $('#headerContainer').find('#btnContact'),
+	$btnCVLinkToSkills = $cvViewport.find('#btnCVLinkToSkills'),
+	$btnAboutLinkToContact = $('#aboutViewport').find('#btnAboutLinkToContact');
 
 	//links - menu
-	var $btnMenuAbout = $('#btnMenuAbout'),
-	$btnMenuSkills = $('#btnMenuSkills'),
-	$btnMenuProjects = $('#btnMenuProjects'),
-	$btnMenuCV = $('#btnMenuCV'),
-	$btnMenuContact = $('#btnMenuContact');
+	var $btnMenuAbout = $('#headerMenu').find('#btnMenuAbout'),
+	$btnMenuSkills =$('#headerMenu').find('#btnMenuSkills'),
+	$btnMenuProjects = $('#headerMenu').find('#btnMenuProjects'),
+	$btnMenuCV = $('#headerMenu').find('#btnMenuCV'),
+	$btnMenuContact = $('#headerMenu').find('#btnMenuContact');
 
 	//Get header height for offset
-	var headerHeight = $('#headerContainer').css('height').replace('px','');
+	var headerHeight = $headerContainer.css('height').replace('px','');
 
-
+	//Stops the initial 'flash' of the menu when the page is first loaded.
 	$headerMenu.removeClass('hide');
 	
 	function scrollTo(e) {
@@ -55,7 +57,8 @@
 	$btnMenuContact.on('click', {el:$contactViewPort}, scrollTo);
 
 
-	//Core skills link in cv
+	//Random links
 	$btnCVLinkToSkills.on('click', {el:$skillsViewport}, scrollTo);
+	$btnAboutLinkToContact.on('click', {el:$contactViewPort}, scrollTo);
 
 }());

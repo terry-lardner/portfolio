@@ -241,7 +241,7 @@ About section
 }
 
 .abSummary {
-  margin-top: 40px;
+  margin: 40px 80px 0 80px;
   font-size: 19px;
 }
 
@@ -456,6 +456,13 @@ Contact section
     display: block;
   }
 
+  /* about me */
+  .abSummary {
+    margin: 40px 20px 0 20px;
+    font-size: 19px;
+  }
+
+
   /* Section viewports */
   .section-about,
   .section-skills  {
@@ -493,6 +500,13 @@ Contact section
   .header-links-menu {
     display: block;
   }
+
+  /* about me */
+  .abSummary {
+    margin: 40px 60px 0 60px;
+    font-size: 19px;
+  }
+
   /* Section viewports */
   .section-about,
   .section-skills  {
@@ -532,6 +546,13 @@ Contact section
   .header-links-menu {
     display: none;
   }
+
+  /* about me */
+  .abSummary {
+    margin: 40px 180px 0 180px;
+    font-size: 19px;
+  }
+
   /* Section viewports */
   .section-about,
   .section-skills  {
