@@ -76,7 +76,12 @@ ul, li {
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
   transition: border 0.13s ease-out;
-}
+  -webkit-transition:border 0.13s ease-out;
+  -moz-transition:border 0.13s ease-out;
+  -o-transition:border 0.13s ease-out;
+  -ms-transition:border 0.13s ease-out;
+  transition:border 0.13s ease-out;
+  }
 
 .header-links a:hover {.
   color: #fff; 
@@ -99,6 +104,12 @@ ul, li {
   border: 1px solid #fff;
   -webkit-appearance: none;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  -webkit-transition:background-color 0.25s ease-out, color 0.25s ease-out;
+  -moz-transition:background-color 0.25s ease-out, color 0.25s ease-out;
+  -o-transition:background-color 0.25s ease-out, color 0.25s ease-out;
+  -ms-transition:background-color 0.25s ease-out, color 0.25s ease-out;
+  transition:background-color 0.25s ease-out, color 0.25s ease-out;
+  }
 }
 
 .menu-bars:hover {
@@ -110,6 +121,12 @@ ul, li {
   color: #030208;
   -webkit-appearance: none;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  -webkit-transition:background-color 0.25s ease-out, color 0.25s ease-out;
+  -moz-transition:background-color 0.25s ease-out, color 0.25s ease-out;
+  -o-transition:background-color 0.25s ease-out, color 0.25s ease-out;
+  -ms-transition:background-color 0.25s ease-out, color 0.25s ease-out;
+  transition:background-color 0.25s ease-out, color 0.25s ease-out;
+  }
 }
 
 .menu-item:hover {
@@ -129,8 +146,10 @@ ul, li {
   margin-top: -53px;
   z-index: 60;
   border-bottom: 1px solid #fff;
+  background: #190D1C;
   background: -webkit-linear-gradient(to bottom, #190D1C, #000);
   background: -moz-linear-gradient(to bottom, #190D1C, #000);
+  background: -o-linear-gradient(to bottom, #190D1C, #000);
   background: linear-gradient(to bottom, #190D1C, #000);
 }
 .container-footer {
@@ -177,6 +196,11 @@ Logo
   cursor:default;
   -webkit-appearance: none;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  -webkit-transition:background-color 0.25s ease-out, color 0.25s ease-out;
+  -moz-transition:background-color 0.25s ease-out, color 0.25s ease-out;
+  -o-transition:background-color 0.25s ease-out, color 0.25s ease-out;
+  -ms-transition:background-color 0.25s ease-out, color 0.25s ease-out;
+  transition:background-color 0.25s ease-out, color 0.25s ease-out;
 }
 
 .btn-logo-v2:hover {
@@ -321,11 +345,6 @@ Projects section
   background-color: #000;
   line-height: 0;
   color: #fff;
-  /*padding: 25px 25px 25px 8px;*/
-  /*margin: -16px 0 0 0;*/
-  /*right: 0;*/
-  /*top: 0;*/
-  /*outline: 0;*/
   font-size: 60px;
   width: 100%;
   height: 100%;
@@ -348,6 +367,10 @@ Projects section
   opacity: 0.3;
   -webkit-appearance: none;
   transition: opacity 0.25s ease-out;
+  -webkit-transition: opacity 0.25s ease-out;
+  -moz-transition: opacity 0.25s ease-out;
+  -o-transition: opacity 0.25s ease-out;
+  -ms-transition: opacity 0.25s ease-out;
 }
 
 /*Remove opacity for touch screens*/
