@@ -414,11 +414,11 @@ CV section
 
 .cv-skills-l {
   text-align: right;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 .cv-skills-r {
   text-align: left;
-  margin-right: 54px;
+  margin-right: -60px;
 }
 /*
 ==================================
