@@ -107,14 +107,14 @@ ul, li {
   -moz-transition:background-color 0.25s ease-out, color 0.25s ease-out;
   -o-transition:background-color 0.25s ease-out, color 0.25s ease-out;
   -ms-transition:background-color 0.25s ease-out, color 0.25s ease-out;
-  }
 }
 
-.menu-bars:hover {
+.header-links-menu a:hover {
   color: #fff;
-  background-color: #000;
+  background-color: #030208;
 }
 
+/*
 .menu-item {
   color: #030208;
   -webkit-appearance: none;
@@ -128,9 +128,9 @@ ul, li {
 
 .menu-item:hover {
   color: #fff;
-  background-color: #000;
+  background-color: #030208;
 }
-
+*/
 .container-header,
 .container-footer {
   padding: 5px;
