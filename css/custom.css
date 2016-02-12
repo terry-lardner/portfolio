@@ -144,10 +144,10 @@ ul, li {
   z-index: 60;
   border-bottom: 1px solid #fff;
   background: #190D1C;
-  background: -webkit-linear-gradient(to bottom, #190D1C, #000);
-  background: -moz-linear-gradient(to bottom, #190D1C, #000);
-  background: -o-linear-gradient(to bottom, #190D1C, #000);
-  background: linear-gradient(to bottom, #190D1C, #000);
+  background: -webkit-linear-gradient(#190D1C, #000);
+  background: -moz-linear-gradient(#190D1C, #000);
+  background: -o-linear-gradient(#190D1C, #000);
+  background: linear-gradient(#190D1C, #000);
 }
 .container-footer {
   border-top: 1px solid #fff;
@@ -220,10 +220,10 @@ About section
   color: #F2F2F2;
   border-top: 1px solid #fff;
   background: #190D1C;
-  background: -webkit-linear-gradient(to bottom, #000, #190D1C);
-  background: -moz-linear-gradient(to bottom, #000, #190D1C);
-  background: -o-linear-gradient(to bottom, #000, #190D1C);
-  background: linear-gradient(to bottom, #000, #190D1C);
+  background: -webkit-linear-gradient(#000, #190D1C);
+  background: -moz-linear-gradient(#000, #190D1C);
+  background: -o-linear-gradient(#000, #190D1C);
+  background: linear-gradient(#000, #190D1C);
 }
 
 .abIntro,
@@ -266,10 +266,10 @@ Skills section
 .section-skills {
   color: #616161;
   background: #FAFAFA;
-  background: -webkit-linear-gradient(to bottom, #D9D9D9, #fff);
-  background: -moz-linear-gradient(to bottom, #D9D9D9, #fff);
-  background: -o-linear-gradient(to bottom, #D9D9D9, #fff);
-  background: linear-gradient(to bottom, #D9D9D9, #fff);
+  background: -webkit-linear-gradient(#D9D9D9, #fff);
+  background: -moz-linear-gradient(#D9D9D9, #fff);
+  background: -o-linear-gradient(#D9D9D9, #fff);
+  background: linear-gradient(#D9D9D9, #fff);
 }
 
 .highlight {
@@ -299,10 +299,10 @@ Projects section
   color: #616161;
   border-top:1px solid #E3E3E3;
   background: #FAFAFA;
-  background: -webkit-linear-gradient(to bottom, #fff, #D9D9D9);
-  background: -moz-linear-gradient(to bottom, #fff, #D9D9D9);
-  background: -o-linear-gradient(to bottom, #fff, #D9D9D9);
-  background: linear-gradient(to bottom, #fff, #D9D9D9);
+  background: -webkit-linear-gradient(#fff, #D9D9D9);
+  background: -moz-linear-gradient(#fff, #D9D9D9);
+  background: -o-linear-gradient(#fff, #D9D9D9);
+  background: linear-gradient(#fff, #D9D9D9);
 }
 
 .projects {
