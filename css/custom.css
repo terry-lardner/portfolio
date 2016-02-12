@@ -1,4 +1,4 @@
-html, body{
+html, body {
   height:100%;
 }
 
@@ -46,7 +46,7 @@ ul, li {
 }
 
 /* Caret in Dropdown Menu*/
-.dropdown.menu .is-dropdown-submenu-parent.is-down-arrow>a::after {
+.dropdown.menu .is-dropdown-submenu-parent.is-down-arrow>a:after {
   display:none;
   padding: 0;
   margin: 0;
@@ -76,13 +76,13 @@ ul, li {
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
   transition: border 0.13s ease-out;
-  -webkit-transition:border 0.13s ease-out;
-  -moz-transition:border 0.13s ease-out;
-  -o-transition:border 0.13s ease-out;
-  -ms-transition:border 0.13s ease-out;
-  }
+  -webkit-transition: border 0.13s ease-out;
+  -moz-transition: border 0.13s ease-out;
+  -o-transition: border 0.13s ease-out;
+  -ms-transition: border 0.13s ease-out;
+}
 
-.header-links a:hover {.
+.header-links a:hover {
   color: #fff; 
   border-bottom: 5px solid #1D1D1D;
 }
@@ -103,10 +103,10 @@ ul, li {
   border: 1px solid #fff;
   -webkit-appearance: none;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
-  -webkit-transition:background-color 0.25s ease-out, color 0.25s ease-out;
-  -moz-transition:background-color 0.25s ease-out, color 0.25s ease-out;
-  -o-transition:background-color 0.25s ease-out, color 0.25s ease-out;
-  -ms-transition:background-color 0.25s ease-out, color 0.25s ease-out;
+  -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  -moz-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  -o-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  -ms-transition: background-color 0.25s ease-out, color 0.25s ease-out;
 }
 
 .header-links-menu a:hover {
@@ -119,11 +119,10 @@ ul, li {
   color: #030208;
   -webkit-appearance: none;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
-  -webkit-transition:background-color 0.25s ease-out, color 0.25s ease-out;
-  -moz-transition:background-color 0.25s ease-out, color 0.25s ease-out;
-  -o-transition:background-color 0.25s ease-out, color 0.25s ease-out;
-  -ms-transition:background-color 0.25s ease-out, color 0.25s ease-out;
-  }
+  -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  -moz-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  -o-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  -ms-transition: background-color 0.25s ease-out, color 0.25s ease-out;
 }
 
 .menu-item:hover {
@@ -193,10 +192,10 @@ Logo
   cursor:default;
   -webkit-appearance: none;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
-  -webkit-transition:background-color 0.25s ease-out, color 0.25s ease-out;
-  -moz-transition:background-color 0.25s ease-out, color 0.25s ease-out;
-  -o-transition:background-color 0.25s ease-out, color 0.25s ease-out;
-  -ms-transition:background-color 0.25s ease-out, color 0.25s ease-out;
+  -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  -moz-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  -o-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  -ms-transition: background-color 0.25s ease-out, color 0.25s ease-out;
 }
 
 .btn-logo-v2:hover {
@@ -241,7 +240,6 @@ About section
 }
 
 .abSummary {
-  margin: 40px 80px 0 80px;
   font-size: 19px;
 }
 
@@ -418,7 +416,7 @@ CV section
 }
 .cv-skills-r {
   text-align: left;
-  margin-right: -60px;
+  margin-right: -15px;
 }
 /*
 ==================================
@@ -459,9 +457,7 @@ Contact section
   /* about me */
   .abSummary {
     margin: 40px 20px 0 20px;
-    font-size: 19px;
   }
-
 
   /* Section viewports */
   .section-about,
@@ -504,7 +500,6 @@ Contact section
   /* about me */
   .abSummary {
     margin: 40px 60px 0 60px;
-    font-size: 19px;
   }
 
   /* Section viewports */
@@ -550,7 +545,6 @@ Contact section
   /* about me */
   .abSummary {
     margin: 40px 180px 0 180px;
-    font-size: 19px;
   }
 
   /* Section viewports */
