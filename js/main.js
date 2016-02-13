@@ -2,7 +2,7 @@
 (function() {
 	//cache DOM 
 	//viewports
-	var $aboutViewport = $('#aboutViewport'),
+	const $aboutViewport = $('#aboutViewport'),
 	$skillsViewport = $('#skillsViewport'),
 	$projectsViewport = $('#projectsViewport'),
 	$cvViewport = $('#cvViewport'),
@@ -11,7 +11,7 @@
 	$headerMenu = $('#headerMenu');
 
 	//links
-	var $btnLogo = $('#headerContainer').find('#btnLogo'),
+	const $btnLogo = $('#headerContainer').find('#btnLogo'),
 	$btnAbout = $('#headerContainer').find('#btnAbout'),
 	$btnSkills = $('#headerContainer').find('#btnSkills'),
 	$btnProjects = $('#headerContainer').find('#btnProjects'),
@@ -21,20 +21,20 @@
 	$btnAboutLinkToContact = $('#aboutViewport').find('#btnAboutLinkToContact');
 
 	//links - menu
-	var $btnMenuAbout = $('#headerMenu').find('#btnMenuAbout'),
+	const $btnMenuAbout = $('#headerMenu').find('#btnMenuAbout'),
 	$btnMenuSkills =$('#headerMenu').find('#btnMenuSkills'),
 	$btnMenuProjects = $('#headerMenu').find('#btnMenuProjects'),
 	$btnMenuCV = $('#headerMenu').find('#btnMenuCV'),
 	$btnMenuContact = $('#headerMenu').find('#btnMenuContact');
 
 	//Get header height for offset
-	var headerHeight = $headerContainer.css('height').replace('px','');
+	const headerHeight = $headerContainer.css('height').replace('px','');
 
 	//Stops the initial 'flash' of the menu when the page is first loaded.
 	$headerMenu.removeClass('hide');
 	
 	function scrollTo(e) {
-		var element = e.data.el;
+		const element = e.data.el;
 		$('html, body').stop().animate ({
 			scrollTop: element.offset().top - headerHeight
 		}, 1000);
@@ -55,7 +55,6 @@
 	$btnMenuProjects.on('click', {el:$projectsViewport}, scrollTo);
 	$btnMenuCV.on('click', {el:$cvViewport}, scrollTo);
 	$btnMenuContact.on('click', {el:$contactViewPort}, scrollTo);
-
 
 	//Random links
 	$btnCVLinkToSkills.on('click', {el:$skillsViewport}, scrollTo);
