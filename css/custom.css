@@ -1,6 +1,9 @@
 html, body {
   height:100%;
 }
+body, h1, h2, h3, h4, h5 {
+  font: 300 16px/22px "Oswald", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 body {
   font: 300 16px/22px "Oswald", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -8,9 +11,9 @@ body {
   background: #000;
 }
 
-h1 {
+h1, h2, h3, h4, h5 {
   padding: 0;
-  margin: 0;
+  margin: 30px 0 40px 0;
 }
 
 ul, li {
@@ -324,10 +327,16 @@ Projects section
 }
 
 .reveal {
-  background-color: #000;
-  border: 1px solid #fff;
+  /*border: 1px solid #FAFAFA;*/
   outline: 0;
+  width: 100%;
   overflow: hidden;
+  background: #0E070F;
+}
+
+.reveal img {
+  /*border: 1px solid #FAFAFA;*/
+  border-radius: 0 30px 0 30px;
 }
 
 .modal-description {
@@ -374,6 +383,28 @@ Projects section
 
 .projects a:hover {
   opacity: 1;
+}
+
+.btn-open-proj {
+  position: relative;
+  z-index: 50;
+  padding: 10px;
+  margin: 0;
+  border-radius: 3px;
+  font-size: 18px;
+  color: #171717;
+  background-color: #FAFAFA;
+}
+
+.btn-open-proj:hover {
+  color: #FAFAFA;
+  background-color: #171717;
+  border: 1px solid #FAFAFA;
+}
+
+.btn-open-proj:focus {
+  color: #171717;
+  background-color: #FAFAFA; 
 }
 
 /*

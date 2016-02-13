@@ -60,7 +60,7 @@
 				Find yourself a mirror, while I continue."<br>
 			</p>
 			<p class="abSummary">
-				HI, I'm Terry Lardner. I'm a self-taught Front-End Web Developer currently living in London, England. I enjoy building responsive websites and have taken a pro-active role in expanding my skillset further into single page applications (SPAs).
+				HI. My name is Terry Lardner. I'm a self-taught Front-End Web Developer currently living in London, England. I enjoy building responsive websites and have taken a pro-active role in expanding my skillset further into single page applications (SPAs).
 				<br><i class="fa fa-circle"></i><br>
 				Want to get in touch? <a id="btnAboutLinkToContact" class="btnCVLinkToSkills">No problem</a>.
 				<br><i class="fa fa-circle"></i><br>
@@ -70,9 +70,9 @@
 			</p>					
 	</section>
 	<section id="skillsViewport" class="section-main section-skills">
-		<p class="section-title">
+		<h1 class="section-title">
 			Core Skills
-		</p>
+		</h1>
 		<i class="fa fa-cubes fa-3x"></i>
 		<ul class="section-list skills">
 			<li class="title">Client-side</li>
@@ -82,18 +82,20 @@
 			<li class="title">Other</li>
 			<li>Github<i class="fa fa-circle"></i>Redmine<i class="fa fa-circle"></i>npm/Bower<i class="fa fa-circle"></i>Gulp<i class="fa fa-circle"></i>Yeoman</li>
 		</ul>
-		<p class="skills-info">
-		Working knowledge of <span class="highlight">HTML5</span> / <span class="highlight">CSS3</span> / client-side <span class="highlight">Javascript</span> (<span class="highlight">jQuery</span>).<br>
-		Working knowledge of package management tools (<span class="highlight">npm</span> / <span class="highlight">bower</span>) and build systems (<span class="highlight">gulp</span>).<br>
-		Working knowledge of <span class="highlight">Responsive Design</span>, <span class="highlight">Cross-Browser Compatibility</span> and popular CSS frameworks (<span class="highlight">Foundation</span>, <span class="highlight">Bootstrap</span>).<br>
-		Experience with and basic knowledge of AJAX and server-side Javascript (<span class="highlight">Expressjs</span>, <span class="highlight">Nodejs</span>).<br>
-		Working knowledge of version control and issue tracking tools (<span class="highlight">Github</span> / <span class="highlight">TortoiseCVS</span> / <span class="highlight">Redmine</span>).
-		</p>
+		<article>
+			<p class="skills-info">
+			Working knowledge of <span class="highlight">HTML5</span> / <span class="highlight">CSS3</span> / client-side <span class="highlight">Javascript</span> (<span class="highlight">jQuery</span>).<br>
+			Working knowledge of package management tools (<span class="highlight">npm</span> / <span class="highlight">bower</span>) and build systems (<span class="highlight">gulp</span>).<br>
+			Working knowledge of <span class="highlight">Responsive Design</span>, <span class="highlight">Cross-Browser Compatibility</span> and popular CSS frameworks (<span class="highlight">Foundation</span>, <span class="highlight">Bootstrap</span>).<br>
+			Experience with and basic knowledge of AJAX and server-side Javascript (<span class="highlight">Expressjs</span>, <span class="highlight">Nodejs</span>).<br>
+			Working knowledge of version control and issue tracking tools (<span class="highlight">Github</span> / <span class="highlight">TortoiseCVS</span> / <span class="highlight">Redmine</span>).
+			</p>
+		</article>		
 	</section>
 	<section id="projectsViewport" class="section-main section-projects">
-		<p class="section-title">
+		<h1 class="section-title">
 			Projects / Demos
-		</p>
+		</h1>
 		<i class="fa fa-suitcase fa-3x"></i>
 		<ul class="section-list projects">
 			<li id="proj-codepen" class="project">
@@ -106,7 +108,7 @@
 				<div class="project-title">
 					Portfolio v1.0
 				</div>
-				<a href="https://rawgit.com/terry-lardner/portfolio/1.0.0/index.html" target="_blank"><img src="img/project_portfolio.jpg"></a>
+				<a data-open="modal-projectPortfolio"><img src="img/project_portfolio.jpg"></a>
 			</li><!--
 			--><li id="proj-wiki" class="project">
 				<div class="project-title">
@@ -132,14 +134,12 @@
 		</div>
 		<div class="github-display">
 			https://github.com/terry-lardner/	
-		</div>
-		
-		
+		</div>	
 	</section>
 	<section id="cvViewport" class="section-main section-cv">
-		<p class="section-title">
+		<h1 class="section-title">
 			CV / Timeline
-		</p>
+		</h1>
 		<i class="fa fa-university fa-3x"></i>
 		<div>
 			<ul class="section-list">
@@ -192,9 +192,9 @@
 		</ul>
 	</section>
 	<section id="contactViewPort" class="section-main section-contact">
-		<p class="section-title">
+		<h1 class="section-title">
 			Contact
-		</p>
+		</h1>
 		<i class="fa fa-users fa-3x"></i>
 		<div class="social">
 				<a class="social-logo" href="https://github.com/terry-lardner/" target="_blank"><img src="img/1454565810_github-square-gloss-social-media.svg" alt="github"></a>
@@ -226,27 +226,66 @@
 				</ul>				
 			</div>
 		</div>		
-		
 	</footer>
 
 
-	<div class="reveal" id="modal-projectWiki" data-reveal>
-		<img src="img/project_wiki_full.jpg">
-		<p class="modal-description">Short description of project #Wikipedia.</p>
+	<div class="reveal row" id="modal-projectWiki" data-reveal>
+		<div class="column medium-8 large-8">
+			<img src="img/project_wiki_full.png">
+		</div>
+		<div class="column medium-4 large-4">
+			<p class="modal-description">
+			A side project on a concept Wikipedia redesign. <br>
+			Built with : jQuery/AJAX, MongoDB, Expressjs RESTapi.
+			</p>
+			<a href="https://rawgit.com/terry-lardner/wikipedia-fe/master/index.html" target="_blank" class="button btn-open-proj">Open site</a>
+		</div>		
 		<button class="close-button" data-close aria-label="Close reveal" type="button">
           <!-- <span aria-hidden="true">&times;</span> -->
         </button>
     </div>
-	<div class="reveal" id="modal-projectIC" data-reveal>
-		<img src="img/project_ic_full.jpg">
-		<p class="modal-description">Short description of project #icecream.</p>
+
+    <div class="reveal row" id="modal-projectPortfolio" data-reveal>
+		<div class="column medium-8 large-8">
+			<img src="img/project_portfolio_full.png">
+		</div>
+		<div class="column medium-4 large-4">
+			<p class="modal-description">
+			My second attempt at my portfolio website..
+			</p>
+			<a href="https://rawgit.com/terry-lardner/portfolio/1.0.0/index.html" target="_blank" class="button btn-open-proj">Open site</a>
+		</div>		
 		<button class="close-button" data-close aria-label="Close reveal" type="button">
           <!-- <span aria-hidden="true">&times;</span> -->
         </button>
     </div>
-	<div class="reveal" id="modal-projectDirectory" data-reveal>
-		<img src="img/project_directory_full.jpg">
-		<p class="modal-description">A "simple" contacts directory app delving into RESTful apis. Uses jQuery AJAX calls to an api served by an expressjs server / mongoDB database.</p>
+
+    <div class="reveal row" id="modal-projectIC" data-reveal>
+		<div class="column medium-8 large-8">
+			<img src="img/project_ic_full.jpg">
+		</div>
+		<div class="column medium-4 large-4">
+			<p class="modal-description">
+				A website for a start-up Environmental Consultant Agency.<br>
+				Freelance, work-in-progress. 
+			</p>
+			<a href="https://rawgit.com/terry-lardner/icecream-fe/master/index.html" target="_blank" class="button btn-open-proj">Open site</a>
+		</div>		
+		<button class="close-button" data-close aria-label="Close reveal" type="button">
+          <!-- <span aria-hidden="true">&times;</span> -->
+        </button>
+    </div>
+
+	<div class="reveal row" id="modal-projectDirectory" data-reveal>
+		<div class="column medium-8 large-8">
+			<img src="img/project_directory_full.png">
+		</div>
+		<div class="column medium-4 large-4">
+			<p class="modal-description">
+				A "simple" contacts directory app. <br>
+				Built with : jQuery/AJAX, MongoDB, Expressjs RESTapi.
+			</p>
+		</div>		
 		<button class="close-button" data-close aria-label="Close reveal" type="button">
           <!-- <span aria-hidden="true">&times;</span> -->
         </button>
