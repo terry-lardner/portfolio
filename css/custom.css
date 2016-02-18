@@ -267,10 +267,10 @@ Skills section
 .section-skills {
   color: #616161;
   background: #FAFAFA;
-  background: -webkit-linear-gradient(#EDEDED, #fff);
-  background: -moz-linear-gradient(#EDEDED, #fff);
-  background: -o-linear-gradient(#EDEDED, #fff);
-  background: linear-gradient(#EDEDED, #fff);
+  background: -webkit-linear-gradient(#F5F5F5, #fff);
+  background: -moz-linear-gradient(#F5F5F5, #fff);
+  background: -o-linear-gradient(#F5F5F5, #fff);
+  background: linear-gradient(#F5F5F5, #fff);
 }
 
 .highlight {
@@ -300,10 +300,10 @@ Projects section
   color: #616161;
   border-top:1px solid #E3E3E3;
   background: #FAFAFA;
-  background: -webkit-linear-gradient(#fff, #EDEDED);
-  background: -moz-linear-gradient(#fff, #EDEDED);
-  background: -o-linear-gradient(#fff, #EDEDED);
-  background: linear-gradient(#fff, #EDEDED);
+  background: -webkit-linear-gradient(#fff, #F5F5F5);
+  background: -moz-linear-gradient(#fff, #F5F5F5);
+  background: -o-linear-gradient(#fff, #F5F5F5);
+  background: linear-gradient(#fff, #F5F5F5);
 }
 
 .projects {
@@ -342,6 +342,11 @@ Projects section
 .modal-description {
   padding-top: 20px;
   font-size: 18px;
+}
+
+.modal-tools li {
+  list-style-type: disc;
+  list-style-position: inside;
 }
 
 .close-button {
@@ -390,16 +395,22 @@ Projects section
   z-index: 50;
   padding: 10px;
   margin: 0;
-  border-radius: 3px;
+  border-radius: 0;
   font-size: 18px;
   color: #171717;
   background-color: #FAFAFA;
+  -webkit-appearance: none;
+  transition: border-radius 0.15s ease-out;
+  -webkit-transition: border-radius 0.15s ease-out;
+  -moz-transition: border-radius 0.15s ease-out;
+  -o-transition: border-radius 0.15s ease-out;
+  -ms-transition: border-radius 0.15s ease-out;
 }
 
 .btn-open-proj:hover {
-  color: #FAFAFA;
-  background-color: #171717;
-  border: 1px solid #FAFAFA;
+  color: #171717;
+  background-color: #FAFAFA;
+  border-radius: 10px;
 }
 
 .btn-open-proj:focus {
