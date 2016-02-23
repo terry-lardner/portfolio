@@ -29,6 +29,13 @@ gulp.task('html', () => {
 		'js': `js/${js_min_filename}`
 	}))
     .pipe(gulp.dest('dist'));
+
+    gulp.src('*/*.html', {base: './'})
+	.pipe(htmlreplace({
+		'css': `../css/${css_min_filename}`,
+		'js': `../js/${js_min_filename}`
+	}))
+    .pipe(gulp.dest('dist'));
 });
 
 //CSS task
@@ -67,11 +74,11 @@ gulp.task('fonts', () => {
 
 //IMAGES task
 gulp.task('images', () => {
-	gulp.src(['*.ico', '*.png'])
-	.pipe(gulp.dest('dist'));
-
 	gulp.src('img/*.*')
 	.pipe(gulp.dest('dist/img'));
+
+	gulp.src('img/wiki-img/*.*')
+	.pipe(gulp.dest('dist/img/wiki-img'));
 });
 
 gulp.task('build', ['html', 'fonts', 'images', 'css', 'js']);
@@ -109,7 +116,7 @@ gulp.task('serve:dist', () => {
 		'dist/img/*.*'
 	]).on('change', reload);
 
-	gulp.watch('*.html', ['html']);
+	gulp.watch(['*.html', '*/*.html'], ['html']);
 	gulp.watch('js/*.js', ['js']);
 	gulp.watch('css/*.css', ['css']);
 	gulp.watch('img/*.*', ['images']);
