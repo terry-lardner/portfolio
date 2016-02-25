@@ -11,21 +11,21 @@
 	$headerMenu = $('#headerMenu');
 
 	//links
-	const $btnLogo = $('#headerContainer').find('#btnLogo'),
-	$btnAbout = $('#headerContainer').find('#btnAbout'),
-	$btnSkills = $('#headerContainer').find('#btnSkills'),
-	$btnProjects = $('#headerContainer').find('#btnProjects'),
-	$btnCV = $('#headerContainer').find('#btnCV'),
-	$btnContact = $('#headerContainer').find('#btnContact'),
+	const $btnLogo = $headerContainer.find('#btnLogo'),
+	$btnAbout = $headerContainer.find('#btnAbout'),
+	$btnSkills = $headerContainer.find('#btnSkills'),
+	$btnProjects = $headerContainer.find('#btnProjects'),
+	$btnCV = $headerContainer.find('#btnCV'),
+	$btnContact = $headerContainer.find('#btnContact'),
 	$btnCVLinkToSkills = $cvViewport.find('#btnCVLinkToSkills'),
-	$btnAboutLinkToContact = $('#aboutViewport').find('#btnAboutLinkToContact');
+	$btnAboutLinkToContact = $aboutViewport.find('#btnAboutLinkToContact');
 
 	//links - menu
-	const $btnMenuAbout = $('#headerMenu').find('#btnMenuAbout'),
-	$btnMenuSkills =$('#headerMenu').find('#btnMenuSkills'),
-	$btnMenuProjects = $('#headerMenu').find('#btnMenuProjects'),
-	$btnMenuCV = $('#headerMenu').find('#btnMenuCV'),
-	$btnMenuContact = $('#headerMenu').find('#btnMenuContact');
+	const $btnMenuAbout = $headerMenu.find('#btnMenuAbout'),
+	$btnMenuSkills =$headerMenu.find('#btnMenuSkills'),
+	$btnMenuProjects = $headerMenu.find('#btnMenuProjects'),
+	$btnMenuCV = $headerMenu.find('#btnMenuCV'),
+	$btnMenuContact = $headerMenu.find('#btnMenuContact');
 
 	//Get header height for offset
 	const headerHeight = $headerContainer.css('height').replace('px','');

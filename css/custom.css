@@ -62,6 +62,10 @@ ul, li {
 
 /* foundation overrides end*/
 
+.opaque {
+	opacity: 1;
+}
+
 .header-links {
 	font-size: 18px;
 	padding: 20px 0 0 0;
@@ -149,6 +153,7 @@ background-color: #030208;
 	background: -webkit-linear-gradient(#1B0E1F, #000);
 	background: -moz-linear-gradient(#1B0E1F, #000);
 	background: -o-linear-gradient(#1B0E1F, #000);
+	background: -ms-linear-gradient(#1B0E1F, #000);
 	background: linear-gradient(#1B0E1F, #000);
 }
 
@@ -226,6 +231,7 @@ About section
 	background: -webkit-linear-gradient(#000, #1B0E1F);
 	background: -moz-linear-gradient(#000, #1B0E1F);
 	background: -o-linear-gradient(#000, #1B0E1F);
+	background: -ms-linear-gradient(#000, #1B0E1F);
 	background: linear-gradient(#000, #1B0E1F);
 }
 
@@ -271,6 +277,7 @@ Skills section
 	background: -webkit-linear-gradient(#F5F5F5, #fff);
 	background: -moz-linear-gradient(#F5F5F5, #fff);
 	background: -o-linear-gradient(#F5F5F5, #fff);
+	background: -ms-linear-gradient(#F5F5F5, #fff);
 	background: linear-gradient(#F5F5F5, #fff);
 }
 
@@ -304,6 +311,7 @@ Projects section
 	background: -webkit-linear-gradient(#fff, #F5F5F5);
 	background: -moz-linear-gradient(#fff, #F5F5F5);
 	background: -o-linear-gradient(#fff, #F5F5F5);
+	background: -ms-linear-gradient(#fff, #F5F5F5);
 	background: linear-gradient(#fff, #F5F5F5);
 }
 
