@@ -74,11 +74,11 @@ gulp.task('fonts', () => {
 
 //IMAGES task
 gulp.task('images', () => {
+	gulp.src(['*.ico', '*.png'])
+	.pipe(gulp.dest('dist'));
+	
 	gulp.src('img/*.*')
 	.pipe(gulp.dest('dist/img'));
-
-	gulp.src('img/wiki-img/*.*')
-	.pipe(gulp.dest('dist/img/wiki-img'));
 });
 
 gulp.task('build', ['html', 'fonts', 'images', 'css', 'js']);
