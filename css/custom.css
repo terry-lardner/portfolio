@@ -245,7 +245,7 @@ About section
 	margin-top: 22px;
 	font-size: 16px;
 	font-style: italic;
-	background-color: #000;
+	background-color: #140A17;
 	color: #F2F2F2;
 }
 
@@ -258,6 +258,7 @@ About section
 }
 
 .lead {
+	background-color: #140A17;
 	padding:20px 0;
 	font-size: 40px;
 }
@@ -443,11 +444,7 @@ CV section
 	padding-top: 15px;
 }
 
-.workexp,
-.edu,
-.cv-skills-l,
-.cv-skills-r,
-.linkToCoreSkills {
+.section-cv-content {
 	font-size: 19px;
 }
 
@@ -464,7 +461,7 @@ CV section
 }
 .cv-skills-r {
 	text-align: left;
-	margin-right: -15px;
+	margin-right: -47px;
 }
 /*
 ==================================
@@ -504,13 +501,16 @@ Contact section
 
 	/* about me */
 	.abSummary {
-		margin: 40px 20px 0 20px;
+		margin: 40px 10px 0 10px;
 	}
 
 	/* Section viewports */
-	.section-about,
+	.section-about {
+		min-height: 1250px;
+	}
+
 	.section-skills  {
-		min-height: 1000px;
+		min-height: 1150px;
 	}
 
 	.section-projects {
@@ -518,7 +518,7 @@ Contact section
 	}
 
 	.section-cv {
-		min-height: 1550px; 
+		min-height: 1600px; 
 	}
 
 	.section-contact {
@@ -542,6 +542,7 @@ Contact section
 
 }
 
+
 @media screen and (min-width:30em) and (max-width:59.9999em) {
 	/* Header menu */
 	.header-links {
@@ -557,7 +558,10 @@ Contact section
 	}
 
 	/* Section viewports */
-	.section-about,
+	.section-about  {
+		min-height: 1000px;
+	}
+
 	.section-skills  {
 		min-height: 1000px;
 	}
@@ -587,6 +591,26 @@ Contact section
 
 }
 
+@media screen and (min-width:30em) and (max-width:59.9999em) and (orientation: landscape){
+	/* about me */
+	.abSummary {
+		margin: 40px 10px 0;
+	}
+
+	.section-cv {
+		min-height: 1450px; 
+	}
+
+	.section-projects {
+		min-height: 900px;
+	}
+
+	.section-contact {
+		min-height: 500px;
+	}
+}
+
+
 @media screen and (min-width:30em) and (max-width:59.9999em) and (orientation: landscape) {
 	.reveal {
 		/*overflow-y: auto;*/
@@ -610,7 +634,10 @@ Contact section
 	}
 
 	/* Section viewports */
-	.section-about,
+	.section-about  {
+		min-height: 1000px;
+	}
+
 	.section-skills  {
 		min-height: 1000px;
 	}
@@ -620,7 +647,7 @@ Contact section
 	}
 
 	.section-cv {
-		min-height: 1300px; 
+		min-height: 1400px; 
 	}
 
 	.section-contact {
