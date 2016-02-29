@@ -77,7 +77,7 @@ gulp.task('images', () => {
 	gulp.src(['*.ico', '*.png'])
 	.pipe(gulp.dest('dist'));
 	
-	gulp.src('img/*.*')
+	gulp.src(['img/*.svg', 'img/*.png'])
 	.pipe(gulp.dest('dist/img'));
 });
 
